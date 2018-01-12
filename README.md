@@ -68,6 +68,12 @@ To trigger the log do:
 $ kill -SIGUSR1 31115
 ```
 
+You can also just use `-r why-is-node-running/include` to include it, for example with ts-node (TypeScript):
+
+```
+$ node --expose-internals -r ts-node/register -r why-is-node-running/include /path/to/some/file.ts
+```
+
 ## License
 
 MIT
